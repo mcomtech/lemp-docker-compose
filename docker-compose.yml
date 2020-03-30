@@ -19,6 +19,8 @@ services:
       restart: always
       volumes:
         - ./www/:/var/www/html
+        - ./php/config/php/php.ini:/usr/local/etc/php/php.ini
+
       expose:
         - "9000"
   nginx:
